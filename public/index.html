@@ -1,15 +1,18 @@
 <!doctype html>
-<!-- Declares meanMapApp as the starting Angular module -->
-<html class="no-js" ng-app="meanMapApp">
+
+<html class="no-js" ng-app="fanFinderApp">
 <head>
     <meta charset="utf-8">
     <title>Scotch MEAN Map</title>
-    <meta name="description" content="An example demonstrating Google Map integration with MEAN Apps">
+    <meta name="description" content="Using the MEAN stack to bring sports fans together">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="base.css">
+
 
     <!-- Google Maps API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrn605l7RPadiwdzsOlRw9O28lxfYBJ6s"></script>
@@ -36,6 +39,59 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
+<div class="wrapper">
+
+  <div class="info-bar">
+    <div class="container">
+      <h2>Find where your teams fans a watching the game!</h2>
+    </div>
+  </div>
+
+  <main>
+      
+      <section class="module parallax parallax-1">
+        <div class="container">
+          <h1>Fan Findr</h1>
+        </div>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-2">
+        <div class="container">
+          <h1>Search</h1>
+        </div>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam in repudiandae architecto placeat, illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-3">
+        <div class="container">
+          <h1>Check-In</h1>
+        </div>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Get your new fan experience kicked off here !</h2>
+        
+      </section>
+
+  </main><!-- /main -->
+
 <div class="container">
     <!-- Header Menu. Note use of headerCtrl -->
     <div class="header" ng-controller="headerCtrl">
@@ -43,11 +99,11 @@
         <!-- Header items are made active upon selection -->
         <ul class="nav nav-pills pull-right">
              <li ng-class="{ active: isActive('/join')}"><a href="/#/join">Join the Team</a></li>
-            <li ng-class="{ active: isActive('/find')}"><a href="/#/find">Find Teammates</a></li>
+            <li ng-class="{ active: isActive('/find')}" class="active"><a href="/#/find">Find Teammates</a></li>
         </ul>
 
         <!-- Header Title -->
-        <h3 class="text-muted">The Scotch MEAN MapApp</h3>
+        <h3 class="text-muted"></h3>
     </div>
 
     <!-- Map and Side Panel -->
@@ -64,13 +120,49 @@
     </div>
     <hr/>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p class="text-center"><span class="glyphicon glyphicon-check"></span> Created by Ahmed Haque for Scotch IO -
-            <a href="https://scotch.io/">App Tutorial</a> | <a href="https://github.com/afhaque/MeanMapAppV2.0">Github Repo</a></p>
-    </div>
-
 </div>
+
+  <footer style="background-color: white;">
+    <div class="container">
+      <div class="asides clearfix">
+        <aside>
+          <nav>
+            <ul>
+              <li><a class="footerlink" href="#">Welcome</a></li>
+              <li><a class="footerlink" href="#">Find Fans</a></li>
+              <li><a class="footerlink" href="#">Check In</a></li>
+              <li><a class="footerlink" href="#">About Us</a></li>
+              <li><a class="footerlink" href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <aside>
+          <nav>
+            <ul>
+              <li><a class="footerlink" href="#">test</a></li>
+              <li><a class="footerlink" href="#">test1</a></li>
+              <li><a class="footerlink" href="#">test2</a></li>
+              <li><a class="footerlink" href="#">test3</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </div>
+  </footer><!-- /footer -->
+  
+</div><!-- /#wrapper -->
+
+<!-- analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34160351-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 
 </body>
 </html>
