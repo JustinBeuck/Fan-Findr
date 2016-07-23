@@ -3,7 +3,7 @@
 <html class="no-js" ng-app="fanFinderApp">
 <head>
     <meta charset="utf-8">
-    <title>Scotch MEAN Map</title>
+    <title>Fan Findr | Find Fellow Fans</title>
     <meta name="description" content="Using the MEAN stack to bring sports fans together">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,9 +35,9 @@
 </head>
 
 <body>
-<!--[if lt IE 10]>
+[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
+[endif]
 
 <div class="wrapper">
 
@@ -92,13 +92,13 @@
 
   </main><!-- /main -->
 
-<div class="container" style="background-image: url(http://i.huffpost.com/gen/1504265/images/o-FOOTBALL-FIELD-facebook.jpg)">
+<div style="background-image: url(http://i.huffpost.com/gen/1504265/images/o-FOOTBALL-FIELD-facebook.jpg)">
     <!-- Header Menu. Note use of headerCtrl -->
     <div class="header" ng-controller="headerCtrl">
 
         <!-- Header items are made active upon selection -->
         <ul class="nav nav-pills pull-right">
-             <li ng-class="{ active: isActive('/join')}"><a href="/#/join">Join the Team</a></li>
+             <li ng-class="{ active: isActive('/join')}"><a href="/#/join">Check-In</a></li>
             <li ng-class="{ active: isActive('/find')}" class="active"><a href="/#/find">Find Teammates</a></li>
         </ul>
 

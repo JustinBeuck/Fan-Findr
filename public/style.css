@@ -52,8 +52,9 @@ body {
 
 /* Google Map! */
 #map {
-    height: 645px;
-    width: 645px;
+    height: 30rem;
+    width: 30rem;
+    margin-left: 5%;
 }
 
 /* Responsive: Portrait tablets and up */
