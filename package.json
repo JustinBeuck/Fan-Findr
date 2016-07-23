@@ -1,9 +1,12 @@
 {
     "name": "MeanMapsApp",
     "version": "1.0.0",
+    "engines": {
+    "node": "4.1.1"
+    },
     "description": "Check-in and find fans near you that love the same team you do",
     "main": "server.js",
-    "author": "Ahmed Haque",
+    "author": "Justin Beuck",
     "dependencies" : {
         "express"    : "~4.7.2",
         "mongoose"   : "~4.1.0",
