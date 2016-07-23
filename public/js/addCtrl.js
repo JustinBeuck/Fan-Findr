@@ -47,7 +47,7 @@ addCtrl.controller('addCtrl', function($scope, $http, $rootScope, geolocation, g
             username: $scope.formData.username,
             gender: $scope.formData.gender,
             age: $scope.formData.age,
-            favlang: $scope.formData.favlang,
+            favteam: $scope.formData.favteam,
             location: [$scope.formData.longitude, $scope.formData.latitude]
         };
 
@@ -59,7 +59,7 @@ addCtrl.controller('addCtrl', function($scope, $http, $rootScope, geolocation, g
                 $scope.formData.username = "";
                 $scope.formData.gender = "";
                 $scope.formData.age = "";
-                $scope.formData.favlang = "";
+                $scope.formData.favteam = "";
 
                 // Refresh the map with new data
                 gservice.refresh($scope.formData.latitude, $scope.formData.longitude);

@@ -53,7 +53,7 @@ module.exports = function(app) {
         var other           = req.body.other;
         var minAge          = req.body.minAge;
         var maxAge          = req.body.maxAge;
-        var favLang         = req.body.favlang;
+        var favteam         = req.body.favteam;
         var reqVerified     = req.body.reqVerified;
 
         // Opens a generic Mongoose Query. Depending on the post body we will...
@@ -86,8 +86,8 @@ module.exports = function(app) {
         }
 
         // ...include filter by Favorite Language
-        if(favLang){
-            query = query.where('favlang').equals(favLang);
+        if(favteam){
+            query = query.where('favteam').equals(favteam);
         }
 
         // ...include filter for HTML5 Verified Locations
