@@ -5,9 +5,9 @@ var app = angular.module('fanFinderApp', ['addCtrl', 'queryCtrl', 'headerCtrl', 
     .config(function($routeProvider){
 
         // Join Team Control Panel
-        $routeProvider.when('/join', {
-            controller: 'addCtrl',
-            templateUrl: 'partials/addForm.html',
+        $routeProvider.when('/', {
+            // controller: 'addCtrl',
+            templateUrl: 'partials/home.html',
 
         // Find Teammates Control Panel
         }).when('/find', {
@@ -15,5 +15,10 @@ var app = angular.module('fanFinderApp', ['addCtrl', 'queryCtrl', 'headerCtrl', 
             templateUrl: 'partials/queryForm.html',
 
         // All else forward to the Join Team Control Panel
-        }).otherwise({redirectTo:'/join'})
+        }).when('/join', {
+            controller: 'addCtrl',
+            templateUrl: 'partials/addForm.html',
+
+        // All else forward to the Join Team Control Panel
+        }).otherwise({redirectTo:'/'})
     });

@@ -99,7 +99,8 @@ main {
   INFO BAR
 ============================================================ */
 .info-bar {
-  padding: 5px 0;
+  margin-top: 5px;
+  padding: 10px 0;
   background-color: #fff;
   text-align: center;
   font-size: 20px;
